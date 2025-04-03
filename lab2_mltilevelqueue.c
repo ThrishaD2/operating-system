@@ -61,3 +61,35 @@ void main()
             fcfs(user_queue,user_count);
         }
 }
+
+##########output#########
+Enter PID,AT,BT,type(0=sys,1=user);1
+2
+5
+0
+Enter PID,AT,BT,type(0=sys,1=user);2
+3
+6
+1
+Enter PID,AT,BT,type(0=sys,1=user);3
+2
+7
+0
+Enter PID,AT,BT,type(0=sys,1=user);4
+5
+3
+1
+
+ Sys process(Higher Priority)
+PID     AT      BT      CT      TAT     WT
+1       2       5       7       5       0
+3       2       7       14      12      5
+
+ Sys process(Lower Priority)
+PID     AT      BT      CT      TAT     WT
+2       3       6       9       6       0
+4       5       3       12      7       4
+
+Process returned 2 (0x2)   execution time : 30.435 s
+Press any key to continue.
+
